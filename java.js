@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 let cell; 
 let newCell;
-const size = 960 + 'px ';
+const size = 960 + 'px';
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
@@ -36,5 +36,13 @@ pop.onclick = function popAlert() {
   }
   else replaceRows(rows, cols);
 };
+
+function random_bg_color() {
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+  document.grid-item:hover.style.background = bgColor;
+}
 
 let startValue = makeRows(16, 16);
