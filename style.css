@@ -14,8 +14,11 @@
     padding: 1em;
     border: 1px solid #ddd;
     text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s ease;
   }
 
 .grid-item:hover {
     background-color: yellow;
+    opacity: 1;
 }
