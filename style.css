@@ -15,7 +15,7 @@
     border: 1px solid #ddd;
     text-align: center;
     opacity: 0;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.3s ease;
   }
 
 .grid-item:hover {
