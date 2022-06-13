@@ -28,7 +28,7 @@ const button = document.getElementById("pop");
 pop.onclick = function popAlert() {   
   let rows = prompt("Enter number of rows:");
   let cols = prompt("Enter number of columns:");
-  if (rows > 100 || columns > 100) {
+  if (rows > 100 || cols > 100) {
     alert ("The number is too high.");
   }
   else replaceRows(rows, cols);
