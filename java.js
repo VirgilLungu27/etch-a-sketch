@@ -42,7 +42,6 @@ function random_bg_color() {
   var y = Math.floor(Math.random() * 256);
   var z = Math.floor(Math.random() * 256);
   var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-  document.grid-item:hover.style.background = bgColor;
-}
+};
 
 let startValue = makeRows(16, 16);
