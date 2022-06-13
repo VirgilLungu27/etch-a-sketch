@@ -18,7 +18,14 @@
     transition: opacity 0.3s ease;
   }
 
-.grid-item:hover {
+  .grid-item:hover {
     background-color: yellow;
     opacity: 1;
+  }
+
+  #button {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
