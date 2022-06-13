@@ -15,7 +15,7 @@ makeRows(16, 16);
 const button = document.getElementById("pop");
 
 pop.onclick = function popAlert(rows, cols) {
-   prompt("Enter number of rows:", rows);
-   prompt("Enter number of columns:", cols);
-   
+   let newRow = prompt("Enter number of rows:", rows);
+   let newColumn = prompt("Enter number of columns:", cols);
+   makeRows(newRow, newColumn);
 }
