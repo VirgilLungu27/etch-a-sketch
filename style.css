@@ -3,7 +3,7 @@
     --grid-rows: 1;
   }
   
-  #container {
+  #container, #parent {
     display: grid;
     grid-gap: 1em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -29,3 +29,16 @@
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
+
+  .grid-item-pop {
+    padding: 1em;
+    border: 1px solid #ddd; 
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .grid-item-pop:hover {
+    background-color: darkgreen;
+    opacity: 1;
+  }
