@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 let cell; 
 let newCell;
-
+const size = 960 + 'px ';
 function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
@@ -16,6 +16,8 @@ function makeRows(rows, cols) {
    container.innerHTML = '';
    container.style.setProperty('grid-template-rows', rows);
    container.style.setProperty('grid-template-columns', cols);
+   container.style.setProperty('width', size);
+   container.style.setProperty('height', size);
    for (let c = 0; c < (rows * cols); c++) {
      newCell = document.createElement("span");
      newCell.innerText = (c + 1);

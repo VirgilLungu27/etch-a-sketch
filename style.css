@@ -8,22 +8,22 @@
     grid-gap: 1px;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
-    max-width: 960px;
+    min-height: 960px;
     max-height: 960px;
-    width: 960px;
-    height: 960px;
+    aspect-ratio: 1;
   }
 
   .grid-item {
-    padding: 1em;
+    padding: 0.8em;
     border: 1px solid #ddd;
     text-align: center;
     opacity: 0;
-    font-size: 12px;
+    font-size: 8px;
     transition: opacity 0.3s ease;
     aspect-ratio: 1;
-    width: 25px;
-    height: 25px;
+    min-height: 3vh;
+    max-height: 3vh;
+    overflow: hidden;
   }
 
   .grid-item:hover {
@@ -36,5 +36,8 @@
     grid-gap: 1em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 1.5px solid white;
+    color: honeydew;
+    background-color: transparent;
 }
     
