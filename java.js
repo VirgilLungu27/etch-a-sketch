@@ -6,7 +6,7 @@ function makeRows(rows, cols) {
   container.style.setProperty('--grid-rows', rows);
   container.style.setProperty('--grid-cols', cols);
   for (let c = 0; c < (rows * cols); c++) {
-    cell = document.createElement("div");
+    cell = document.createElement("span");
     cell.innerText = (c + 1);
     container.appendChild(cell).className = "grid-item";
   };
@@ -14,13 +14,14 @@ function makeRows(rows, cols) {
 
  function replaceRows(rows, cols) {
    container.innerHTML = '';
-   container.style.setProperty('--grid-rows', rows);
-   container.style.setProperty('--grid-cols', cols);
+   container.style.setProperty('grid-template-rows', rows);
+   container.style.setProperty('grid-template-columns', cols);
    for (let c = 0; c < (rows * cols); c++) {
-     newCell = document.createElement("div");
+     newCell = document.createElement("span");
      newCell.innerText = (c + 1);
      container.appendChild(newCell).className = "grid-item";
   }
+   startValue = makeRows(rows, cols);
 };
 
 const button = document.getElementById("pop");
